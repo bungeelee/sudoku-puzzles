@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<html>
+<head>
+<title>Hilfe zu Andoku</title>
+<link rel="stylesheet" type="text/css"
+	href="file:///android_asset/andoku.css">
+</head>
+<body>
+
+<h1>Inhaltsverzeichnis</h1>
+
+<ul>
+	<li><a href="#objective">Ziel des Spiels</a></li>
+	<li><a href="#variations">Spielvarianten</a></li>
+	<ul>
+		<li><a href="#grids">Rasterarten</a></li>
+		<li><a href="#extras">Zusatzbereiche</a></li>
+	</ul>
+	<li><a href="#difficulties">Schwierigkeitsgrade</a></li>
+	<li><a href="#inputmethods">Eingabemethoden</a></li>
+	<ul>
+		<li><a href="#im_ctv">Feld dann Werte</a></li>
+		<li><a href="#im_vtc">Werte dann Feld</a></li>
+		<li><a href="#im_auto">Automatisch</a></li>
+	</ul>
+	<li><a href="#links">Externe Links</a></li>
+</ul>
+
+<h1 id="objective">Ziel des Spiels</h1>
+
+<p>Das Ziel des Spiels ist es, ein Raster so mit den Ziffern von 1
+bis 9 zu befüllen, dass jede Ziffer exakt einmal in jedem <i>Bereich</i>
+vorkommt. Im Falle eines Standard-Sudokus ist ein <i>Bereich</i> dabei
+entweder eine Zeile, eine Spalte oder ein quadratischer 3x3-Block.</p>
+
+<h1 id="variations">Spielvarianten</h1>
+
+<p>Andoku bietet neben der klassischen Version zusätzliche
+Sudoku-Varianten an. Im Menü <i>Neues Spiel</i> können Sie aus zwei
+Rasterarten und fünf Arten von Zusatzbereichen wählen.</p>
+
+<h2 id="grids">Rasterarten</h2>
+
+<p>Die verfügbaren Rasterarten sind:</p>
+<dl>
+	<dt>Standard</dt>
+	<dd>Das Raster besteht aus quadratischen 3x3-Blöcken.</dd>
+	<dt>Squiggly (auch Jigsaw)</dt>
+	<dd>Anstelle von neun quadratischen Blöcken besteht das Raster aus
+	neun Bereichen, die nicht quadratisch sind. Diese Bereiche sind durch
+	eine dicke Linie abgegrenzt und die Ziffern von 1 bis 9 müssen in jedem
+	dieser Bereiche genau einmal vorkommen.</dd>
+</dl>
+
+<h2 id="extras">Zusatzbereiche</h2>
+
+<p>Durch Zusatzbereiche werden einem Sudoku-Rätsel zusätzliche
+Einschränkungen auferlegt. Zusätzlich zur klassischen Variante gibt es
+vier Arten von Zusatzbereichen:</p>
+<dl>
+	<dt>Keine</dt>
+	<dd>Sie müssen lediglich die Grundregeln für die 9 Zeilen, Spalten
+	und (quadratischen oder squiggly) Blöcke befolgen.</dd>
+	<dt>X-Sudoku</dt>
+	<dd>Die Ziffern von 1 bis 9 müssen in den beiden Diagonalen des
+	Rasters genau einmal vorkommen. Die Diagonalen sind mit einer
+	hellblauen Farbe hinterlegt, um das anzuzeigen.</dd>
+	<dt>Hyper-Sudoku</dt>
+	<dd>Das Sudoku hat vier Zusatzbereiche, die hellblau hinterlegt
+	sind. Zusätzlich zu den Zeilen, Spalten und Blöcken müssen die Ziffern
+	von 1 bis 9 in jedem dieser Zusatzbereiche genau einmal auftreten.</dd>
+	<dt>Prozent-Sudoku</dt>
+	<dd>Das Sudoku hat drei Zusatzbereiche, die einem Prozent-Zeichen
+	ähneln.</dd>
+	<dt>Farb-Sudoku</dt>
+	<dd>Dieses Sudoku hat neun Zusatzbereiche, die jeweils mit einer
+	eigenen Hintergrundfarbe gekennzeichnet sind. Insgesamt gibt es also
+	neun verschiedene Hintergrundfarben. Die Ziffern von 1 bis 9 müssen in
+	allen Feldern gleicher Hintergrundfarbe genau einmal vorkommen.</dd>
+</dl>
+
+<h1 id="difficulties">Schwierigkeitsgrade</h1>
+
+<p>Andoku bietet fünf Schwierigkeitsgrade pro Spielvariante. Die
+Schwierigkeit bewegt sich von <i>einfach</i> bis <i>teuflisch</i>.
+Squiggly-Sudokus oder Sudokus mit Zusatzbereich sind dabei generell
+schwieriger als Standard-Sudokus.</p>
+
+<p>Die Schwierigkeitsgrade <i>schwer</i> und <i>teuflisch</i>
+sollten schwierigere Sudoku-Rätsel beinhalten, als sie üblicherweise in
+Tageszeitungen abgedruckt sind.</p>
+
+<p>Mit zehn verschiedenen Spielvarianten, fünf Schwierigkeitsgraden
+und jeweils 100 Rätseln hat Andoku in Summe 5000 verschiedene
+Sudoku-Rätsel.</p>
+
+<h1 id="inputmethods">Eingabemethoden</h1>
+
+<p>Andoku bietet drei verschiedene Eingabemethoden, um während eines
+Spiels Ziffern in Felder des Sudoku-Rätsels eingeben zu können. Unter
+Einstellungen kann zwischen diesen Methoden ausgewählt werden.</p>
+
+<h2 id="im_ctv">Feld dann Werte</h2>
+
+<p>Bei dieser Eingabemethode wird zuerst das Feld mit dem Finger
+angetippt und anschließend können über den Ziffernblock ein oder mehrere
+mögliche Werte für dieses Feld eingegeben werden. Das aktuell
+ausgewählte Feld wird dabei am Spielfeld farbig hinterlegt.</p>
+
+<p>Mit der Taste <tt>C</tt> werden die Werte des aktuellen Feldes
+gelöscht.</p>
+
+<p>Die Taste <tt>Inv</tt> dient dazu, die Werte des aktuellen Feldes
+umzukehren. Damit kann recht schnell festgelegt werden, dass bestimmte
+Ziffern <i>nicht</i> möglich sind. Zum Beispiel führt die Eingabe <tt>3</tt>,
+<tt>7</tt>, <tt>Inv</tt> dazu, dass die Ziffern 1, 2, 4, 5, 6, 8 und 9
+ausgewählt werden (alle Ziffern bis auf 3 und 7).</p>
+
+<p>Bei Geräten mit einem Track-Ball kann dieser verwendet werden, um
+die Markierung auf eines der Nachbarfelder zu verschieben.</p>
+
+<h2 id="im_vtc">Werte dann Feld</h2>
+
+<p>Diese Eingabemethode funktioniert genau umgekehrt. Hierbei werden
+zuerst am Ziffernblock ein oder mehrere Werte ausgewählt. Erst danach
+wird auf ein Feld getippt, um ihm diese Werte zuzuweisen.</p>
+
+<p>Mit dieser Eingabemethode kann man viel Tipparbeit sparen, weil
+es so möglich ist, den gleichen Wert oder die gleichen möglichen Werte
+schnell mehreren Feldern hintereinander zuzuweisen indem man die Felder
+nach der Reihe antippt.</p>
+
+<p>Interessant ist das Verhalten dieser Methode, wenn man ein Feld
+antippt, das nicht leer ist. Dabei hängt das Ergebnis davon ab, ob das
+Feld bereits einen der ausgewählten Werte hat oder nicht. Hat das Feld
+keinen der Werte, dann werden die Werte hinzugefügt (gleiches Verhalten
+wie bei leerem Feld). Wenn jedoch einer der ausgewählten Werte bereits
+im Feld vorhanden ist, werden statt dessen die ausgewählten Werte im
+Feld gelöscht.</p>
+
+<p>Beispiel 1: Feldwert ist <tt>3</tt>, Ziffernblock beinhaltet <tt>5</tt>
+und <tt>7</tt>, das ergibt 3, 5 und 7.</p>
+
+<p>Beispiel 2: Feldwerte sind <tt>3</tt>, <tt>5</tt> und <tt>7</tt>,
+am Ziffernblock sind <tt>3</tt> und <tt>5</tt>, das ergibt 7.</p>
+
+<p>Beispiel 3: Feldwerte sind <tt>3</tt> und <tt>5</tt>, am
+Ziffernblock sind <tt>5</tt> und <tt>8</tt>, das ergibt 3. D.h. 5 wird
+gelöscht, aber 8 wird <i>nicht</i> gesetzt.</p>
+
+<p>Die Taste <tt>C</tt> dient dazu, aller Werte auf der Tastatur zu
+löschen. Mit der Taste <tt>Inv</tt> werden die ausgewählten Werte auf
+der Tastatur umgekehrt.</p>
+
+<p>Beispiel 4: Feldwerte sind <tt>3</tt>, <tt>5</tt> und <tt>7</tt>,
+angenommen, Sie glauben, dass der richtige Wert die 5 sein müsste. Eine
+einfache Möglichkeit alle Werte bis auf die 5 zu löschen, ist die
+Eingabe von <tt>5</tt> gefolgt von <tt>Inv</tt> und danach auf das Feld
+zu tippen.</p>
+
+<h2 id="im_auto">Automatisch</h2>
+
+<p>Bei dieser Eingabemethode kann recht einfach zwischen <i>Feld
+dann Werte</i> und <i>Werte dann Feld</i> gewechselt werden.</p>
+
+<p>Das bedeutet, dass beide Eingabearten möglich sind. Tippt der
+Benutzer zuerst auf ein Feld wird automatisch <i>Feld dann Werte</i>
+verwendet. Tippt der Benutzer hingegen zuerst auf Ziffern des
+Ziffernblocks wird <i>Werte dann Feld</i> verwendet.</p>
+
+<p>Von <i>Feld dann Werte</i> gelangt man wieder in die neutrale
+Ausgangssituation zurück indem man nochmals auf das ausgewählte Feld
+tippt.</p>
+
+<p>Von <i>Werte dann Feld</i> gelangt man in die neutrale
+Ausgangssituation indem man alle Ziffern auf dem Ziffernblock löscht, am
+einfachsten also mit der Taste <tt>C</tt>.</p>
+
+<h1 id="links">Externe Links</h1>
+
+<p>Andoku ist ein Open-Source-Projekt. Die Homepage des Projekts
+wird von <a href="http://code.google.com/p/andoku">Google Code</a>
+gehostet.</p>
+
+<p>Für mehr Informationen zu Sudoku-Rätseln im Allgemeinen siehe <a
+	href="http://de.m.wikipedia.org/wiki/Sudoku">Wikipedia: Sudoku</a>.</p>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Andoku - a sudoku puzzle game for Android.
+  Copyright (C) 2009, 2010  Markus Wiederkehr
+
+  This file is part of Andoku.
+
+  Andoku is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Andoku is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Andoku.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<resources>
+    <!-- The possible grid styles (used by "Start New Game") -->
+    <string-array name="grid_styles">
+        <item>Standard</item>
+        <item>Squiggly</item>
+    </string-array>
+
+    <!-- The possible extra regions (used by "Start New Game") -->
+    <string-array name="extra_regions">
+        <item>Keine</item>
+        <item>X-Sudoku</item>
+        <item>Hyper-Sudoku</item>
+        <item>Prozent-Sudoku</item>
+        <item>Farb-Sudoku</item>
+    </string-array>
+
+    <!-- The possible difficulties (used by "Start New Game") -->
+    <string-array name="difficulties">
+        <item>Einfach</item>
+        <item>Mittel</item>
+        <item>Anspruchsvoll</item>
+        <item>Schwierig</item>
+        <item>Teuflisch</item>
+    </string-array>
+
+    <!-- Values for "Colored Regions" (used by "Settings") -->
+    <string-array name="pref_entries_colored_regions">
+        <item>Niemals</item>
+        <item>Für Standard und Squiggly ohne Extra</item>
+        <item>Für alle außer Squiggly mit Extrabereichen</item>
+        <item>Immer</item>
+    </string-array>
+
+    <!-- Values for "Highlight Digits" (used by "Settings") -->
+    <string-array name="pref_entries_highlight_digits">
+        <item>Niemals</item>
+        <item>Nur einfache Werte</item>
+        <item>Sowohl einfache als auch mehrfache Werte</item>
+    </string-array>
+
+    <!-- Values for "Color Theme" (used by "Settings") -->
+    <string-array name="pref_entries_color_theme">
+        <item>Klassisch</item>
+        <item>Dunkel</item>
+    </string-array>
+
+    <!-- Values for "Input Method" (used by "Settings") -->
+    <string-array name="pref_entries_input_method">
+        <item>Feld dann Werte</item>
+        <item>Werte dann Feld</item>
+        <item>Automatisch</item>
+    </string-array>
+</resources>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+  Andoku - a sudoku puzzle game for Android.
+  Copyright (C) 2009, 2010  Markus Wiederkehr
+
+  This file is part of Andoku.
+
+  Andoku is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  Andoku is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with Andoku.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.easyfilter.sudoku"
+      android:installLocation="auto"
+      android:versionCode="2"
+      android:versionName="1.0.1">
+
+    <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="8"/>
+
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission-group android:name="com.easyfilter.sudoku.permission-group.ANDOKU"
+        android:label="@string/permgroup_label_andoku"
+        android:description="@string/permgroup_description_andoku"
+        android:icon="@drawable/icon"/>
+
+    <permission android:name="com.easyfilter.sudoku.permission.IMPORT"
+        android:label="@string/perm_label_import"
+        android:description="@string/perm_description_import"
+        android:permissionGroup="com.easyfilter.sudoku.permission-group.ANDOKU"
+        android:protectionLevel="normal"/>
+
+    <application android:name=".Application" android:icon="@drawable/icon" android:label="@string/app_name">
+        <provider android:name=".AndokuContentProvider"
+                  android:authorities="com.easyfilter.sudoku.puzzlesprovider"
+                  android:writePermission="com.easyfilter.sudoku.permission.IMPORT"/>
+
+        <activity android:name=".Main"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".OpenImportedPuzzleActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".ResumeGameActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+
+        <activity android:name=".NewGameActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+
+        <activity android:name=".FolderListActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+
+        <activity android:name=".SettingsActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+
+        <activity android:name=".HelpActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+
+        <activity android:name=".AboutActivity"
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+
+        <activity android:name=".AndokuActivity"
+                  android:screenOrientation="portrait"                   
+                  android:label="@string/app_name"
+                  android:theme="@style/Theme.NoBackground.Light"/>
+    </application>
+
+</manifest> 
